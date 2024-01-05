@@ -2,6 +2,8 @@
 
 This is a small example of how to build a TO-DO app with Vue 3, Vite, TailwindCSS and TypeScript. Markup is borrowed from https://codepen.io/robstinson/pen/YzGLMYw
 
+**Demo:** https://vue-todo-simoneldevig.netlify.app
+
 ## Getting started
 
 ```bash
