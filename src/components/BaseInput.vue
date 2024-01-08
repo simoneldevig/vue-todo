@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, defineEmits } from 'vue';
+import { computed, defineEmits, defineProps } from 'vue';
 
 const props = defineProps({
   modelValue: { type: [String, Number], default: '' },
