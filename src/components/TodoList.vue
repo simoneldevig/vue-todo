@@ -13,7 +13,7 @@
 						{{ todo.text }}
 					</BaseCheckbox>
 					
-					<div class="bg-white sticky bottom-0 pb-8">
+					<div class="bg-white dark:bg-gray-800 sticky bottom-0 pb-8">
 						<button class="flex items-center w-full h-8 px-2 mt-2 text-sm font-medium rounded">
 							<svg class="w-5 h-5 text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg" @click="addNewTodo" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -22,7 +22,7 @@
 						</button>
 	
 						<button class="flex px-2 mt-2 text-gray-400 text-sm" @click="addRandomTodos">
-							Add <input type="number" v-model="randomTodos" class="mx-1 focus:outline-none font-medium text-center border-dotted border-2 border-gray-400 rounded [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" placeholder="1" /> random tasks 
+							Add <input type="number" v-model="randomTodos" class="mx-1 focus:outline-none font-medium text-center bg-transparent border-dotted border-2 border-gray-400 rounded [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" placeholder="1" /> random tasks 
 						</button>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 				todos.value.push({
 					text: Math.random().toString(36).substring(2, 15),
 					completed: false,
-				});
+				}); 
 			}
 	
 			randomTodos.value = 1;
